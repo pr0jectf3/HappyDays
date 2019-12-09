@@ -27,7 +27,7 @@ IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "github-integration" )
+enabled=PoolStringArray(  )
 
 [input]
 

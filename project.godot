@@ -19,6 +19,16 @@ config/name="HappyDays"
 run/main_scene="res://Levels/Level1.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GameState="*res://Levels/GameState.gd"
+UserData="*res://addons/github-integration/scripts/user_data.gd"
+IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "github-integration" )
+
 [input]
 
 left={
@@ -46,6 +56,7 @@ jump={
 2d_physics/layer_2="Terrain"
 2d_physics/layer_3="Hazards"
 2d_physics/layer_4="JumpPad"
+2d_physics/layer_5="Portal"
 
 [rendering]
 

@@ -1,0 +1,123 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Levels/Tileset.tres" type="TileSet" id=2]
+[ext_resource path="res://SFX/Summer_Park.ogg" type="AudioStream" id=3]
+[ext_resource path="res://Levels/Portal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://GUI/GUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Items/Coin.tscn" type="PackedScene" id=6]
+
+[node name="Level3" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 236, 1748 )
+collision_mask = 30
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+collision_layer = 2
+format = 1
+tile_data = PoolIntArray( 131072, 8, 0, 131118, 8, 0, 196608, 8, 0, 262190, 8, 0, 327680, 8, 0, 393262, 8, 0, 458752, 8, 0, 458798, 8, 0, 589824, 8, 0, 589870, 8, 0, 655406, 8, 0, 720896, 8, 0, 786478, 8, 0, 851968, 8, 0, 852014, 8, 0, 917550, 8, 0, 983040, 8, 0, 983086, 8, 0, 1048622, 8, 0, 1114112, 8, 0, 1114158, 8, 0, 1179694, 8, 0, 1245184, 8, 0, 1245230, 8, 0, 1310766, 8, 0, 1376256, 8, 0, 1376302, 8, 0, 1441838, 8, 0, 1507328, 8, 0, 1507374, 8, 0, 1638400, 8, 0, 1638446, 8, 0, 1769472, 8, 0, 1769518, 8, 0, 1900544, 8, 0, 1900546, 8, 0, 1900548, 8, 0, 1900550, 8, 0, 1900551, 8, 0, 1900553, 8, 0, 1900555, 8, 0, 1900557, 8, 0, 1900559, 8, 0, 1900561, 8, 0, 1900563, 8, 0, 1900565, 8, 0, 1900567, 8, 0, 1900569, 8, 0, 1900571, 8, 0, 1900573, 8, 0, 1900575, 8, 0, 1900577, 8, 0, 1900579, 8, 0, 1900581, 8, 0, 1900583, 8, 0, 1900585, 8, 0, 1900586, 8, 0, 1900588, 8, 0, 1900590, 8, 0 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -8.0
+autoplay = true
+
+[node name="Portal" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="Portal" parent="Portal" instance=ExtResource( 4 )]
+position = Vector2( 2779, 1716 )
+
+[node name="GUI" parent="." instance=ExtResource( 5 )]
+
+[node name="Coins" type="Node" parent="."]
+editor/display_folded = true
+
+[node name="Coin" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 491, 1796 )
+
+[node name="Coin2" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 656, 1801 )
+
+[node name="Coin3" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 845, 1801 )
+
+[node name="Coin4" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1043, 1799 )
+
+[node name="Coin5" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1241, 1794 )
+
+[node name="Coin6" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1442, 1789 )
+
+[node name="Coin7" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1655, 1798 )
+
+[node name="Coin8" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1891, 1793 )
+
+[node name="Coin9" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 2132, 1788 )
+
+[node name="Coin10" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 2406, 1795 )
+
+[node name="Coin11" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 2281, 1615 )
+
+[node name="Coin12" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 2005, 1587 )
+
+[node name="Coin13" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1764, 1611 )
+
+[node name="Coin14" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1544, 1592 )
+
+[node name="Coin15" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1348, 1580 )
+
+[node name="Coin16" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1147, 1563 )
+
+[node name="Coin17" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 932, 1577 )
+
+[node name="Coin18" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 727, 1568 )
+
+[node name="Coin19" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 569, 1559 )
+
+[node name="Coin20" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 857, 1353 )
+
+[node name="Coin23" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 670, 1346 )
+
+[node name="Coin21" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 479, 1358 )
+
+[node name="Coin22" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1044, 1353 )
+
+[node name="Coin24" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1254, 1351 )
+
+[node name="Coin25" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1483, 1339 )
+
+[node name="Coin26" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1691, 1348 )
+
+[node name="Coin27" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 1932, 1355 )
+
+[node name="Coin28" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 2154, 1353 )
+
+[node name="Coin29" parent="Coins" instance=ExtResource( 6 )]
+position = Vector2( 2378, 1351 )

@@ -21,7 +21,6 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 shape = SubResource( 1 )
 
 [node name="PlayerAnimation" parent="." instance=ExtResource( 2 )]
@@ -32,6 +31,7 @@ position = Vector2( 1000, 0 )
 current = true
 zoom = Vector2( 3, 3 )
 limit_left = 0
+limit_bottom = 2000
 drag_margin_h_enabled = false
 drag_margin_v_enabled = false
 smoothing_enabled = true

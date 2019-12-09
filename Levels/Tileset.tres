@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=17 format=2]
+[gd_resource type="TileSet" load_steps=20 format=2]
 
 [ext_resource path="res://GFX/Environment/ground_cake.png" type="Texture" id=1]
 [ext_resource path="res://GFX/Environment/ground_cake_small.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://GFX/Environment/ground_sand_small.png" type="Texture" id=6]
 [ext_resource path="res://GFX/Environment/ground_snow.png" type="Texture" id=7]
 [ext_resource path="res://GFX/Environment/ground_snow_small.png" type="Texture" id=8]
+[ext_resource path="res://GFX/Environment/dirt.png" type="Texture" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( -176, -48, 176, -48, 189.667, -38.6969, 191.657, -17.4674, 160, 32, -160, 48, -189.146, -12.8235, -190.473, -33.3895, -184, -40 )
@@ -32,6 +33,12 @@ points = PoolVector2Array( -176, -48, 176, -48, 189.667, -38.6969, 191.657, -17.
 
 [sub_resource type="ConvexPolygonShape2D" id=8]
 points = PoolVector2Array( -83.8403, -50.1346, 35.4142, -50.1346, 86.7428, -49.5199, 94.1193, -46.1389, 99.6518, -39.0697, 101.189, -20.0136, 72.6043, 49.7564, -63.8621, 41.4578, -78.0005, 38.9989, -98.5935, -16.6327, -99.8229, -24.3166, -99.2082, -37.533, -95.5199, -44.9095, -88.758, -48.5978 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 67.3689, 68.1082 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 67.3689, 68.1082 )
 
 [resource]
 0/name = "ground_cake"
@@ -162,3 +169,35 @@ points = PoolVector2Array( -83.8403, -50.1346, 35.4142, -50.1346, 86.7428, -49.5
 "shape_transform": Transform2D( 1, 0, 0, 1, 100.807, 50 )
 } ]
 7/z_index = 0
+8/name = "dirt"
+8/texture = ExtResource( 9 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 135, 135 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 67.5, 67.5 )
+8/navigation_offset = Vector2( 67.5, 67.5 )
+8/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 9 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 67.5, 67.5 )
+} ]
+8/z_index = 0
+9/name = "big_dirt"
+9/texture = ExtResource( 9 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 135, 135 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 67.5, 67.5 )
+9/navigation_offset = Vector2( 67.5, 67.5 )
+9/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 10 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 67.5, 67.5 )
+} ]
+9/z_index = 0

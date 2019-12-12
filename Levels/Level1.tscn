@@ -41,7 +41,7 @@ position = Vector2( 1256.81, 722.421 )
 position = Vector2( 1670.36, 337.301 )
 
 [node name="Coin4" parent="Coins" instance=ExtResource( 4 )]
-position = Vector2( 1840.95, 337.301 )
+position = Vector2( 1845.21, 337.301 )
 
 [node name="Coin5" parent="Coins" instance=ExtResource( 4 )]
 position = Vector2( 2257.08, 726.299 )
@@ -120,7 +120,7 @@ position = Vector2( 8622.34, 1635.76 )
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
-volume_db = -8.0
+volume_db = -14.058
 autoplay = true
 
 [node name="JumpPads" type="Node" parent="."]

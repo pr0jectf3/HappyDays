@@ -20,7 +20,6 @@ func _physics_process(delta):
 	
 func apply_gravity():
 	if position.y > WORLD_LIMIT:
-		print("dead")
 		get_tree().call_group("Gamestate","end_game")
 	elif is_on_floor() and motion.y > 0:
 		motion.y = 0
